@@ -2,6 +2,7 @@ import Image from "next/image";
 import bakeryImg from "./bakeryimage.png";
 
 import products from "./products";
+import ProductItem from "./components/ProductItem";
 
 export default function Home() {
   const productList = products.map((product) => (
@@ -24,8 +25,8 @@ export default function Home() {
       </h2>
       <Image src={bakeryImg} className="my-20 rounded-3xl"></Image>
       <div className="flex flex-row flex-wrap justify-between gap-10">
-        {productList}
-
+        {/* {productList} */}
+        <ProductItem />
         {/* <div className="">
           <Image
             src={mascarpone}
